@@ -1,0 +1,46 @@
+
+.section2_subtitles{
+    position:relative;
+    top:-55vh;
+    width: 95.5vw;
+    height:1px;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.section2_sub1{
+    width: 25%;
+    text-align: center;
+    font-family: var(--font-menu);
+    font-size: 3vw;
+    color: var(--banner-font-color);
+
+}
+
+.section2_sub2{
+    width: 25%;
+    text-align: end;
+    font-family: var(--font-menu);
+    font-size: 3vw;
+    color:var(--banner-font-color);
+}
+
+
+
+@media only screen and (min-width:401px) and (max-width:750px) {
+  
+    .section2_subtitles{
+    
+     display:none;
+ 
+    }
+     
+ .section2{
+    height:2rem;
+ }
+ 
+ 
+ 
+   }
+ 

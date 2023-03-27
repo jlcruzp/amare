@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Gowun Dodum";
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  body {
+    font: 18px/26px var(--font-body);
+  }
+  
+  .container {
+    padding: 0 15x;
+  }
+  
+  .container-max {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+
+  .not-active { 
+    pointer-events: none; 
+    cursor:default; 
+} 
+
+
+
+
+/* STICKY STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .page-header.is-sticky {
+    position: fixed;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    backdrop-filter: blur(5px);
+    animation: slideDown 0.35s ease-out;
+  }
+  
+  .page-header.is-sticky img {
+    max-width: 80%;
+  }
+  
+  .page-header.is-sticky button {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }

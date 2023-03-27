@@ -1,0 +1,10 @@
+.static_footer{
+    width: 100vw;
+    height: 30vw;
+    background-color:var(--terciary-color);
+    opacity: 50%;
+}
+
+.footer_container{
+    
+}
