@@ -1,10 +1,280 @@
 .static_footer{
     width: 100vw;
-    height: 30vw;
+    height: 29rem;
     background-color:var(--terciary-color);
     opacity: 50%;
 }
 
 .footer_container{
-    
+    position:static;
+    bottom: 0;
+    width: 100%;
+    display:flex;
+    height: 100%;
 }
+
+.mapa_sitio_container{
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.list_item{
+    margin: 5vw 0;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+
+/*-- formulario--*/
+
+.form_container{
+    width: 50vw;
+    height: 100%;
+    display:flex;
+    justify-content: space-around;
+
+}
+
+
+
+
+.container_contacto{
+    width: 100%;
+  display: flex;
+}
+.contacto_titulo{
+    justify-content: center;
+    font-size: 2rem;
+    margin: 1rem auto;
+}
+
+.formulario{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.fieldset-form{
+    width: 80%;
+}
+  
+  .form__label {
+  
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-container {
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+ 
+  
+  .input {
+    box-sizing: border-box;
+    border:none;
+    border-bottom:.02rem solid gray;
+    padding: 1.5rem 0.5rem 0.5rem;
+    height: 3.25rem;
+    width: 100%;
+    cursor: pointer;
+    font-family: "Gowun Dodum";
+  }
+  
+  .input::placeholder {
+    visibility: hidden;
+    color: #00000000;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .input-label {
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    transition: all 0.25s;
+  }
+  
+  .input:not(:placeholder-shown) + .input-label,
+  .input:focus + .input-label {
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all 0.25s;
+  }
+  
+  .input-container--invalid {
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-container--invalid .input {
+    border: 1px solid var(--warning-color);
+    border-radius: 7px;
+  }
+  
+  .input-container--invalid .input-label {
+    color: var(--warning-color);
+  }
+  
+  .input-message-error {
+    display: none;
+  }
+  
+  .input-container--invalid .input-message-error {
+    color: var(--warning-color);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  .textarea {
+    box-sizing: border-box;
+    border: 1px solid var(--secondary-color);
+    padding: 0.5rem;
+    border-radius: 7px;
+    width: 100%;
+    min-height: 3rem;
+  }
+  
+  .textarea-container {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: var(--font-weigth-input);
+  }
+  
+  .textarea::placeholder {
+    visibility: hidden;
+  }
+  
+  .textarea:focus {
+    outline: none;
+  }
+  
+  .textarea-label {
+    position: absolute;
+    top: .5rem;
+    left: 0.5rem;
+    font-weight: 500;
+    transition: all 0.25s;
+  }
+  
+  .textarea:not(:placeholder-shown) + .textarea-label,
+  .textarea:focus + .textarea-label {
+    font-size: 0.875rem;
+    top: -1.4rem;
+    color: var(--primary-color);
+    transition: all 0.25s;
+  }
+  
+  .textarea-container--invalid {
+    margin-bottom: 0.5rem;
+  }
+  
+  .textarea-container--invalid .textarea {
+    border: 1px solid var(--warning-color);
+  }
+  
+  .textarea-container--invalid .textarea-label {
+    color: var(--warning-color);
+  }
+  
+  .textarea-message-error {
+    display: none;
+  }
+  
+  .textarea-container--invalid .textarea-mensage-error {
+    display: block;
+    color: var(--warning-color);
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+
+  .button_form {
+    display: flex;
+    height: 2rem;
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    transition: all 1.2s;
+    font-family: var(--font-menu);
+  }
+
+  @media only screen and (min-width:401px) and (max-width:800px) {
+
+    .static_footer{
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem auto;
+      width: 100vw;
+    }
+    .imagen_formulario_contacto{
+
+      display:none;
+
+    }
+
+    .container_contacto{
+      flex-direction: column;
+      width: 100vw;
+      align-items: center;
+
+    }
+
+    .formulario{
+      width: 80%;
+      margin: 1rem auto;
+    }
+    .input-container{
+      width:100%;
+    }
+  }
+
+
+  @media only screen and (max-width:400px){
+    .static_footer{
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem auto;
+      width: 100vw;
+    }
+    .imagen_formulario_contacto{
+
+      display:none;
+
+    }
+
+    .container_contacto{
+      flex-direction: column;
+      width: 100vw;
+      align-items: center;
+
+    }
+
+    .formulario{
+      width: 80%;
+      margin: 1rem auto;
+    }
+    .input-container{
+      width:100%;
+    }
+
+
+  }
+
+
+  
+

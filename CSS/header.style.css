@@ -31,17 +31,30 @@
   color: lightcoral;
   font-size: 1.3vw;
   }
+  .input1-container-max{
+    display: flex;
+    width: 60vw;
+  }
 
-  .input-container{
+  .input1-container{
     display:flex;
-    justify-content: center;
-    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
     margin-top: 15px;
 
   }
-  .input{
+
+  .button_container{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1.02rem;
+  }
+
+  .input1{
     margin:0 .5rem;
-    width: 30vw;
+    width: 90%;
     height: 2rem;
     border-radius: .7rem;
     border: none ;
@@ -54,7 +67,7 @@
     backdrop-filter: blur(5px);
   }
 
-  .input::placeholder {
+  .input1::placeholder {
     visibility:visible;
     color: lightgrey;
     font-family: var(--font-body);
@@ -62,32 +75,33 @@
     font-weight: var(--font-weigth-input-placeholder);
     text-align: center;
   }
-  .input:focus {
+  .input1:focus {
     outline: none;
   }
+  
  
 
   .input-message-error {
     display: none;
   }
   
-  .input-container--invalid .input-message-error {
+  .input1-container--invalid .input-message-error {
     color: var(--warning-color);
     display: block;
     margin-top: 0.5rem;
     padding-left: 0.5rem;
   }
   
-  .input-container--invalid {
+  .input1-container--invalid {
     margin-bottom: 0.5rem;
   }
 
-  .input-container--invalid .input {
+  .input1-container--invalid .input1 {
     border: 1px solid var(--warning-color);
     border-radius: 7px;
   }
   
-  .input-container--invalid .input-label {
+  .input1-container--invalid {
     color: var(--warning-color);
   }
 
