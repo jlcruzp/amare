@@ -15,7 +15,7 @@
 
 .section_titulo{
     font-family: var(--font-menu);
-    font-size: 3vw;
+    font-size: 3rem;
     margin: 2rem 0;
 }
 
@@ -53,3 +53,42 @@ text-align: center;
 }
 
 
+@media only screen and (max-width:537px) {
+
+    .product.cuarto{
+      display:none;
+    }
+    .product.quinto{
+      display:none;
+    }
+
+
+    .section_titulo{
+        font-size: 2rem;
+    }
+
+    .vermas{
+        justify-content: center;
+    }
+  
+
+  }
+
+  @media only screen and (min-width:538px) and (max-width:800px) {
+
+
+
+    .product.quinto{
+      display:none;
+
+    }
+
+    .section_titulo{
+        font-size: 2.3rem;
+    }
+
+    .vermas{
+       justify-content: center;
+    }
+
+  }

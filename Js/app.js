@@ -8,3 +8,12 @@ inputs.forEach( input => {
     })
 
 })
+
+
+const textarea = document.querySelectorAll("textarea");
+
+textarea.forEach( textarea => {
+    textarea.addEventListener("blur", (textarea) =>{
+        valida(textarea.target);
+    } )
+})

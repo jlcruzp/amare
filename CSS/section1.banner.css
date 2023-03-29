@@ -8,4 +8,14 @@
 
 
 
+  @media only screen and (max-width:800px) {
 
+
+    .section1_banner{
+        height: 50vh;
+        background-size: 100vw;
+    }
+
+
+
+  }
