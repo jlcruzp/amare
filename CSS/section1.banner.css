@@ -8,11 +8,25 @@
 
 
 
-  @media only screen and (max-width:800px) {
+  @media only screen and (max-width:537px) {
 
 
     .section1_banner{
-        height: 50vh;
+        height: 35vh;
+        background-size: 100vw;
+    }
+
+    
+
+
+  }
+
+
+  @media only screen and (min-width:538px) and (max-width:800px){
+
+
+    .section1_banner{
+        height: 40vh;
         background-size: 100vw;
     }
 

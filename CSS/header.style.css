@@ -194,6 +194,41 @@
       display:none;
     }
 
+   
+    .input1{
+      font-size: 1rem;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .input1-container{
+      margin: 7px 0 0 0;
+      padding: 0;
+    }
+
+    .input1::placeholder {
+      font-size: 1rem;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .button_container{
+      margin: 5px auto;
+      padding:0;
+    }
+
+    .img_logo{
+      width: 170px;
+    }
+
+    .input1-container-max{
+      margin: 0 auto;
+      padding: 0;
+      height: fit-content;
+    }
+
+
     .page-header nav{
       margin-right: 2rem;
       margin-left: 1.5rem;
