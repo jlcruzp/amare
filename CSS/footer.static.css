@@ -190,7 +190,8 @@
   
   .textarea-container--invalid .input-message-error {
     display: block;
-    color: var(--primary-color);
+    color: var(--terciary-color);
+    font-weight: 100;
     margin-top: 0.5rem;
     padding-left: 0.5rem;
   }

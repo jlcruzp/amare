@@ -1,0 +1,43 @@
+.section_login{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+}
+
+.login_container{
+    width: 100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario_login{
+    display: flex;
+    height: 100%;
+    align-items:center;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 60%;
+}
+
+.login_titulo{
+    font-size: 3.5rem;
+    margin:2rem auto;
+    font-family: var(--font-menu);
+    text-align: center;
+}
+
+
+.input_login{
+    margin: 2rem auto;
+}
+
+.fieldset_login{
+    width: 70%;
+    background-color: lightgray;
+}
+
+
+
+

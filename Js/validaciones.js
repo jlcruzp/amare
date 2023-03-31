@@ -34,6 +34,10 @@ const mensajesDeError = {
     valueMissing: "El campo correo no puede estar vacío",
     typeMismatch: "El correo no es válido",
   },
+  password: {
+    valueMissing: "El campo contraseña no puede estar vacío",
+    patternMismatch: "6-12 caracteres,1 letra minúscula,1 letra mayúscula,1 número y sin caracteres especiales.",
+  },
   mensaje: {
       valueMissing: "Este campo no puede estar vacío",
       patternMismatch: "El mensaje debe contener entre 3 y 300 carácteres"
@@ -55,3 +59,4 @@ function mostrarMensajeDeError(tipoDeInput, input) {
   });
   return mensaje;
 }
+
