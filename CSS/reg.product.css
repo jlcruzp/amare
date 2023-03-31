@@ -1,0 +1,34 @@
+.reg_titulo{
+    font-size: 2.5rem;
+    font-family: var(--font-menu);
+    text-align: center;
+}
+
+.section_reg{
+    width: 100vw;
+    margin-top:8rem;
+    display:flex;
+}
+
+.reg_container{
+    width: 100%;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario_reg{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+    margin: 5rem auto;
+    width: 60%;
+}
+
+.input_reg{
+    margin: 2rem auto;
+}
+
+

@@ -30,6 +30,21 @@ const mensajesDeError = {
     valueMissing: "El campo nombre no puede estar vacío",
     patternMismatch:"Al menos 4 caracteres y máximo 50, no puede contener caracteres especiales.",
   },
+  nombreProducto: {
+    valueMissing: "El campo nombre no puede estar vacío",
+    patternMismatch:"Al menos 2 caracteres y máximo 50, no puede contener caracteres especiales.",
+  },
+  category: {
+    valueMissing: "El campo Descripción no puede estar vacío",
+    patternMismatch:"Al menos 4 caracteres y máximo 50, no puede contener caracteres especiales.",
+  },
+  description: {
+    valueMissing: "El campo Descripción no puede estar vacío",
+    patternMismatch:"Al menos 3 caracteres y máximo 400, no puede contener caracteres especiales.",
+  },
+  url: {
+    valueMissing: "El campo url no puede estar vacío",
+  },
   email: {
     valueMissing: "El campo correo no puede estar vacío",
     typeMismatch: "El correo no es válido",
@@ -37,6 +52,9 @@ const mensajesDeError = {
   password: {
     valueMissing: "El campo contraseña no puede estar vacío",
     patternMismatch: "6-12 caracteres,1 letra minúscula,1 letra mayúscula,1 número y sin caracteres especiales.",
+  },
+  price: {
+    valueMissing: "El campo Precio no puede estar vacío",
   },
   mensaje: {
       valueMissing: "Este campo no puede estar vacío",

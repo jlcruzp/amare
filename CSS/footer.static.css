@@ -181,7 +181,7 @@
   }
   
   .textarea-container--invalid .textarea {
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--terciary-color);
   }
   
   .textarea-container--invalid .textarea-label {

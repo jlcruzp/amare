@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width initial-scale=1.0" />
+                <title>Amare-Registro de Producto</title>
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="./CSS/reset.css">
+                <link rel="stylesheet" href="./CSS/footer.movil.css">
+                <link rel="stylesheet" href="./CSS/Variables.css">
+                <link rel="stylesheet" href="./CSS/header.style.css">
+                <link rel="stylesheet" href="./CSS/general.style.css">
+                <link rel="stylesheet" href="./CSS/footer.static.css">
+                <link rel="stylesheet" href="./CSS/login.formulario.css">
+                <link rel="stylesheet" href="./CSS/reg.product.css">
+    
+    
+            </head>
+
+  
+    <body>
+        
+        <header class="page-header header">
+            <div class="container_header">
+                <a id="login" href="./index.html#home"><img class="img_logo" src="./images/Amare_logo.png" alt="Logo Amare"></a>
+              <div class="input1-container-max">
+              <div class="input1-container">
+                <input name="cep" id="cep" class="input1" type="text" placeholder="¿Qué deseas buscar?" required pattern="[\s\S]{1,50}" data-tipo="busqueda"> 
+                <span class="input-message-error">No ingresaste nada para buscar</span>  
+            </div>
+            <div class="button_container">
+            <button class="button_search">buscar</a>
+            </div>
+            </div>
+            </div>
+          </header>
+
+
+
+              <section class="section_reg">
+               <div class="reg_container">
+
+                  <form id="formulario"action="./mensaje_enviado.html" class="formulario_reg flex flex--column">
+                    <fieldset class="fieldset-form fiedset_login">
+                      <h2 class="reg_titulo">Agregar nuevo Producto</h2>
+
+                      <div class="input-container input_reg">
+                        <input name="url" id="url" class="input" type="text" placeholder="url" required  data-tipo="url">
+                        <label class="input-label" for="name">Url*</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+
+                    <div class="input-container input_reg">
+                        <input name="category" id="category" class="input" type="text" placeholder="Categoría" required pattern="[\s\S]{4,50}" data-tipo="category">
+                        <label class="input-label" for="name">Categoría*</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+
+                    <div class="input-container input_reg">
+                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required pattern="[\s\S]{2,50}" data-tipo="nombreProducto">
+                        <label class="input-label" for="name">Nombre del producto*</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+
+                    
+
+                    <div class="input-container input_login">
+                        <input name="price" id="price" class="input" type="number" placeholder="Precio" required data-tipo="price">
+                        <label class="input-label" for="password">Precio*</label>
+                        <span class="input-message-error error-login">Este campo no es valido</span>
+                    </div>
+
+                    <div class="textarea-container">
+                        <textarea rows="5" name="mensaje" id="mensaje" class="textarea" type="text" placeholder="mensaje" required pattern="[\s\S]{3,400}" data-tipo="description"></textarea>
+                        <label class="textarea-label" for="mensaje">Descripción del producto*</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    
+                        
+                        
+                      <button class="button_form .button_login">Agregar Producto</a>
+                    </fieldset>
+                </form> 
+            </div>
+          </section>
+
+
+        
+          <script type=module src="./Js/navbar.js"></script>
+          <script type=module src="./Js/app.js"></script>
+
+       
+
+        
+
+          <section class="static_footer">
+            <div class="footer_container">
+                <div class="mapa_sitio_container">
+                    <ul class="site_map">
+                   <a href="#"><li class="list_item">Quienes somos.</li> </a>
+                    <a href="#"><li class="list_item">Politica de Privacidad.</li></a>
+                   <a href="#"> <li class="list_item">Anúnciate.</li></a>
+                    <a href="#"><li class="list_item">Pedidos especiales.</li></a>
+                    </ul>
+
+                </div>
+
+                <div class="form_container">
+                   
+                    <div class="container_contacto">
+                        
+                    <form id="formulario_contacto"action="./mensaje_enviado.html" class="formulario flex flex--column">
+                      <fieldset class="fieldset-form">
+                        <h2 class="contacto_titulo">Contacto</h2>
+                          <div class="input-container">
+                              <input name="name" id="name" class="input" type="text" placeholder="Nombre" required pattern="[\s\S]{4,50}" data-tipo="nombre">
+                              <label class="input-label" for="name">Nombre*</label>
+                              <span class="input-message-error">Este campo no es valido</span>
+                          </div>
+                          <div class="input-container">
+                              <input name="email" id="email" class="input" type="email" placeholder="Email" required data-tipo="email">
+                              <label class="input-label" for="email">Email*</label>
+                              <span class="input-message-error">Este campo no es valido</span>
+                          </div>
+                        <div class="textarea-container">
+                            <textarea rows="5" name="mensaje" id="mensaje" class="textarea" type="text" placeholder="mensaje" required pattern="[\s\S]{3,300}" data-tipo="mensaje"></textarea>
+                            <label class="textarea-label" for="mensaje">Mensaje</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                      </fieldset>
+                      <button class="button_form">Enviar</a>
+                  </form> 
+                  
+                </div>   
+                </div>
+            </div>
+          </section>
+
+
+
+
+        <footer class="page-footer">
+            <span class="contactus">Contact Us </span>
+            <a  class="target" href="https://www.linkedin.com/in/jcruzpea/" target="_blank">
+              <img width="84" height="24" src="./images/Amare_logo.png" alt="Juan Luis logo">
+            </a>
+
+            <div class="container_footer">
+            <nav class="navbar1">
+              <a  class="navbar1_item" href="#" >PULSERAS</a>
+              <a  class="navbar1_item" href="#skills">ANILLOS</a>
+              <a  class="navbar1_item" href="#hobbie">COLLARES</a>
+              <a  class="navbar1_item" href="#formacion">ARETES</a>
+             <a  class="navbar1_item" href="#experiencia">BOLSAS</a>               
+            </nav>
+            </div>
+          </footer>
+
+         
+
+
+    </body>
