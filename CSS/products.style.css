@@ -21,6 +21,7 @@
 
 .product_container{
     display:flex;
+    width: 20;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -50,6 +51,7 @@ text-align: center;
 .product_contenido h3{
     color:var(--terciary-color);
     font-weight: 100;
+    margin-bottom: 1rem;
 }
 
 

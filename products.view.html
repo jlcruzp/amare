@@ -16,7 +16,7 @@
                 <link rel="stylesheet" href="./CSS/section2.banner.css">
                 <link rel="stylesheet" href="./CSS/products.style.css">
                 <link rel="stylesheet" href="./CSS/footer.static.css">
-                <link rel="stylesheet" href="./CSS/login.formulario.css">
+                <link rel="stylesheet" href="./CSS/view.products.css">
     
         
     
@@ -28,15 +28,16 @@
         
         <header class="page-header">
             <div class="container_header">
+                
                 <a href="#home"><img class="img_logo" src="./images/Amare_logo.png" alt="Logo Amare"></a>
-              <nav class="navbar">
-                <a  class="navbar_item" href="#" >PULSERAS</a>
-                <a  class="navbar_item" href="#skills">ANILLOS</a>
-                <a  class="navbar_item" href="#hobbie">COLLARES</a>
-                <a  class="navbar_item" href="#formacion">ARETES</a>
-               <a  class="navbar_item" href="#experiencia">BOLSAS</a>               
-                <button class="login_button" type="button"><a href="./login.html#login">Login</a></button>
-              </nav>
+                <nav class="navbar navbar_products">
+                    <a  class="navbar_item navbar_item-products" href="#" >PULSERAS</a>
+                    <a  class="navbar_item navbar_item-products" href="#allProdAnillos">ANILLOS</a>
+                    <a  class="navbar_item navbar_item-products" href="#allProdCollares">COLLARES</a>
+                    <a  class="navbar_item navbar_item-products" href="#allProdAretes">ARETES</a>
+                   <a  class="navbar_item navbar_item-products" href="#allProdBolsas">BOLSAS</a>               
+                    <button class="login_button" type="button"><a href="./login.html#login">Login</a></button>
+                  </nav>
               <div class="input1-container-max">
               <div class="input1-container">
                 <input name="cep" id="cep" class="input1" type="text" placeholder="¿Qué deseas buscar?" required pattern="[\s\S]{1,50}" data-tipo="busqueda"> 
@@ -45,29 +46,17 @@
             </div>
             <div class="button_container">
               <button class="button_search"><a href="#">Buscar</a></button>
-           
+              
             </div>
             </div>
             </div>
           </header>
-        
+          <a id="allProdPulseras"></a>
+          
 
-
-          <section class="section1_banner"></section>
-        
-        <section class="section2"></section>
-        <div class="section2_subtitles">
-            <h2 class="section2_sub1">El diseño de AMARE</h2>
-            <h2 class="section2_sub2">Un legado vivo</h2>
+         <section class="product_section pulseras_section">
             
-        </div>
-         </section>
-
-
-         <section class="product_section">
-
             <h2 class="section_titulo not-active">PULSERAS</h2>
-            <a class="vermas" href="#"><h4>Ver todos los Productos</h4></a>
   
             <div class="product_container">
   
@@ -81,6 +70,18 @@
                           </a>
                         </div>
                 </div>  
+                <div class="product">
+                    <a href="#">
+                    <img class="product_img" src="./images/producto_pulsera1.png" alt="Logo Música">
+                            <div class="product_contenido">
+                              <h4 class="product_title not-active">Love</h4>
+                              <h2>$500.00MXN</h2>
+                              <h3>Ver producto</h2>
+                              </a>
+                            </div>
+                    </div>  
+
+                
 
                 <div class="product">
                     <a href="#">
@@ -94,7 +95,7 @@
                     </div>  
 
 
-                    <div class="product cuarto">
+                    <div class="product">
                         <a href="#">
                         <img class="product_img" src="./images/producto_pulsera1.png" alt="Logo Música">
                                 <div class="product_contenido">
@@ -104,28 +105,30 @@
                                   </a>
                                 </div>
                         </div>  
-
-                        <div class="product quinto">
+                        
+                        <div class="product">
                             <a href="#">
                             <img class="product_img" src="./images/producto_pulsera1.png" alt="Logo Música">
                                     <div class="product_contenido">
+                                        
                                       <h4 class="product_title not-active">Love</h4>
                                       <h2>$500.00MXN</h2>
                                       <h3>Ver producto</h2>
                                       </a>
+                                     
                                     </div>
                             </div>  
                            
                 
             </div>
-
+            
          </section>
 
-
-         <section class="product_section">
-
+         <a id="allProdAnillos"></a>
+         <section class="product_section anillos_section">
+            
             <h2 class="section_titulo not-active">  ANILLOS</h2>
-            <a class="vermas" href="#"><h4 class="vermas">Ver todos los Productos</h4></a>
+            
   
             <div class="product_container">
   
@@ -140,6 +143,19 @@
                         </div>
                 </div>  
 
+                <div class="product_container">
+  
+                    <div class="product">
+                    <a href="#">
+                    <img class="product_img" src="./images/ring.png" alt="Logo Música">
+                            <div class="product_contenido">
+                              <h4 class="product_title not-active">Love</h4>
+                              <h2>$500.00MXN</h2>
+                              <h3>Ver producto</h2>
+                              </a>
+                            </div>
+                    </div>  
+
                 <div class="product">
                     <a href="#">
                     <img class="product_img" src="./images/ring.png" alt="Logo Música">
@@ -152,7 +168,7 @@
                     </div>  
 
 
-                    <div class="product cuarto">
+                    <div class="product">
                         <a href="#">
                         <img class="product_img" src="./images/ring.png" alt="Logo Música">
                                 <div class="product_contenido">
@@ -163,10 +179,11 @@
                                 </div>
                         </div>  
 
-                        <div class="product quinto">
+                        <div class="product">
                             <a href="#">
                             <img class="product_img" src="./images/ring.png" alt="Logo Música">
                                     <div class="product_contenido">
+                                       
                                       <h4 class="product_title not-active">Love</h4>
                                       <h2>$500.00MXN</h2>
                                       <h3>Ver producto</h2>
@@ -179,14 +196,12 @@
 
          </section>
 
+         <a id="allProdCollares"></a>
 
-
-
-
-         <section class="product_section">
-
+         <section class="product_section collares_section">
+            
             <h2 class="section_titulo not-active">COLLARES</h2>
-            <a class="vermas" href="#"><h4 class="vermas">Ver todos los Productos</h4></a>
+            
   
             <div class="product_container">
   
@@ -212,8 +227,19 @@
                             </div>
                     </div>  
 
+                <div class="product">
+                    <a href="#">
+                    <img class="product_img" src="./images/collar.png" alt="Logo Música">
+                            <div class="product_contenido">
+                              <h4 class="product_title not-active">Love</h4>
+                              <h2>$500.00MXN</h2>
+                              <h3>Ver producto</h2>
+                              </a>
+                            </div>
+                    </div>  
 
-                    <div class="product cuarto">
+
+                    <div class="product">
                         <a href="#">
                         <img class="product_img" src="./images/collar.png" alt="Logo Música">
                                 <div class="product_contenido">
@@ -224,7 +250,7 @@
                                 </div>
                         </div>  
 
-                        <div class="product quinto">
+                        <div class="product">
                             <a href="#">
                             <img class="product_img" src="./images/collar.png" alt="Logo Música">
                                     <div class="product_contenido">
@@ -242,11 +268,10 @@
 
 
 
-
-         <section class="product_section">
-
+         <section class="product_section aretes_section">
+            <a id="allProdAretes"></a>
             <h2 class="section_titulo not-active">ARETES</h2>
-            <a class="vermas" href="#"><h4 class="vermas">Ver todos los Productos</h4></a>
+        
   
             <div class="product_container">
   
@@ -270,10 +295,21 @@
                               <h3>Ver producto</h2>
                               </a>
                             </div>
+                    </div> 
+
+                <div class="product">
+                    <a href="#">
+                    <img class="product_img" src="./images/Earrings.png" alt="Logo Música">
+                            <div class="product_contenido">
+                              <h4 class="product_title not-active">Love</h4>
+                              <h2>$500.00MXN</h2>
+                              <h3>Ver producto</h2>
+                              </a>
+                            </div>
                     </div>  
 
 
-                    <div class="product cuarto">
+                    <div class="product">
                         <a href="#">
                         <img class="product_img" src="./images/Earrings.png" alt="Logo Música">
                                 <div class="product_contenido">
@@ -284,7 +320,7 @@
                                 </div>
                         </div>  
 
-                        <div class="product quinto">
+                        <div class="product">
                             <a href="#">
                             <img class="product_img" src="./images/Earrings.png" alt="Logo Música">
                                     <div class="product_contenido">
@@ -302,10 +338,10 @@
 
 
 
-         <section class="product_section">
-
+         <section class="product_section bolsas_section">
+            <a id="allProdBolsas"></a>
             <h2 class="section_titulo">BOLSAS</h2>
-            <a class="vermas" href="#"><h4>Ver todos los Productos</h4></a>
+           
   
             <div class="product_container">
   
@@ -329,10 +365,21 @@
                               <h3>Ver producto</h2>
                               </a>
                             </div>
+                    </div> 
+
+                <div class="product">
+                    <a href="#">
+                    <img class="product_img" src="./images/bag.png" alt="Logo Música">
+                            <div class="product_contenido">
+                              <h4 class="product_title not-active">Love</h4>
+                              <h2>$500.00MXN</h2>
+                              <h3>Ver producto</h2>
+                              </a>
+                            </div>
                     </div>  
 
 
-                    <div class="product cuarto">
+                    <div class="product">
                         <a href="#">
                         <img class="product_img" src="./images/bag.png" alt="Logo Música">
                                 <div class="product_contenido">
@@ -343,7 +390,7 @@
                                 </div>
                         </div>  
 
-                        <div class="product quinto">
+                        <div class="product">
                             <a href="#">
                             <img class="product_img" src="./images/bag.png" alt="Logo Música">
                                     <div class="product_contenido">
@@ -421,10 +468,10 @@
             <div class="container_footer">
             <nav class="navbar1">
               <a  class="navbar1_item" href="#" >PULSERAS</a>
-              <a  class="navbar1_item" href="#skills">ANILLOS</a>
-              <a  class="navbar1_item" href="#hobbie">COLLARES</a>
-              <a  class="navbar1_item" href="#formacion">ARETES</a>
-             <a  class="navbar1_item" href="#experiencia">BOLSAS</a>               
+              <a  class="navbar1_item" href="#allProdAnillos">ANILLOS</a>
+              <a  class="navbar1_item" href="#allProdCollares">COLLARES</a>
+              <a  class="navbar1_item" href="#allProdAretes">ARETES</a>
+             <a  class="navbar1_item" href="#allProdBolsas">BOLSAS</a>               
             </nav>
             </div>
           </footer>
