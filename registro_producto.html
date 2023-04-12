@@ -41,55 +41,65 @@
 
               <section class="section_reg">
                <div class="reg_container">
+                <h2 class="reg_titulo">Agregar nuevo Producto</h2>
 
-                  <form id="formulario"action="./mensaje_enviado.html" class="formulario_reg flex flex--column">
+                  <form id="formulario"action="" class="formulario_reg flex flex--column" data-form>
                     <fieldset class="fieldset-form fiedset_login">
-                      <h2 class="reg_titulo">Agregar nuevo Producto</h2>
-
+                    
                       <div class="input-container input_reg">
-                        <input name="url" id="url" class="input" type="text" placeholder="url" required  data-tipo="url">
-                        <label class="input-label" for="name">Url*</label>
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>
-
-                    <div class="input-container input_reg">
-                        <input name="category" id="category" class="input" type="text" placeholder="Categoría" required pattern="[\s\S]{4,50}" data-tipo="category">
-                        <label class="input-label" for="name">Categoría*</label>
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>
-
-                    <div class="input-container input_reg">
-                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required pattern="[\s\S]{2,50}" data-tipo="nombreProducto">
+                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required pattern="[\s\S]{2,50}"  data-tipo="nombreProducto">
                         <label class="input-label" for="name">Nombre del producto*</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
 
-                    
-
                     <div class="input-container input_login">
-                        <input name="price" id="price" class="input" type="number" placeholder="Precio" required data-tipo="price">
-                        <label class="input-label" for="password">Precio*</label>
-                        <span class="input-message-error error-login">Este campo no es valido</span>
+                      <input name="price" id="price" class="input" type="number" placeholder="Precio" required data-tipo="price">
+                      <label class="input-label" for="password">Precio*</label>
+                      <span class="input-message-error error-login">Este campo no es valido</span>
+                  </div>
+
+
+                  <div class="input-container input_reg">
+                    <input name="category" id="category" class="input" type="text" placeholder="Categoría" required pattern="[\s\S]{4,50}"  data-tipo="category">
+                    <label class="input-label" for="name">Categoría*</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+
+                      <div class="input-container input_reg input_img">
+                        <input name="url" id="url" class="input img_input" type="url" placeholder="Agregue una imagen" data-tipo="url" required>
+                        <label class="input-label" for="url">Imagen*</label>
+                        <span class="input-message-error">Este campo no es valido</span>
                     </div>
 
+                                
                     <div class="textarea-container">
                         <textarea rows="5" name="mensaje" id="mensaje" class="textarea" type="text" placeholder="mensaje" required pattern="[\s\S]{3,400}" data-tipo="description"></textarea>
                         <label class="textarea-label" for="mensaje">Descripción del producto*</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
-                    
                         
-                        
-                      <button class="button_form .button_login">Agregar Producto</a>
                     </fieldset>
+                    <button class="button_form .button_login">Agregar Producto</a>
                 </form> 
             </div>
           </section>
 
 
-        
-          <script type=module src="./Js/navbar.js"></script>
-          <script type=module src="./Js/app.js"></script>
+          <!--Nav Bar-->
+          <script type="module" src="./Js/navbar.js"></script>
+          <!--validaciones inputs-->
+          <script type="module" src="./Js/app.js"></script>
+           <!-- ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- UUID -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+
+          <!--Controllers-->
+      <script type="module" src="./Controllers/agrega-producto-controller.js"></script>
 
        
 
@@ -111,7 +121,7 @@
                    
                     <div class="container_contacto">
                         
-                    <form id="formulario_contacto"action="./mensaje_enviado.html" class="formulario flex flex--column">
+                    <form id="formulario_contacto"action="https://formspree.io/f/xdovpdok" method="post" class="formulario flex flex--column">
                       <fieldset class="fieldset-form">
                         <h2 class="contacto_titulo">Contacto</h2>
                           <div class="input-container">

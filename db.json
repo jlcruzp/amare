@@ -1,0 +1,32 @@
+{
+  "product": [
+    {
+      "nombre": "Alura Latam",
+      "precio": "567",
+      "categoria": "bolsa",
+      "imagen": "https://avatars.githubusercontent.com/u/4975968?s=280&v=4",
+      "descripcion": "Product",
+      "id": "1"
+    },
+    {
+      "nombre": "Juan Luis",
+      "precio": "566",
+      "categoria": "bolsas",
+      "imagen": "https://images.pexels.com/photos/234798/pexels-photo-234798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "descripcion": "Producto",
+      "id": "bee174d2-3d91-476f-a799-dd7c27db82ff"
+    }
+  ],
+  "admins": [
+    {
+      "email": "jcruzpea@hotmail.com",
+      "contraseña": "Juan1988",
+      "id": "1"
+    },
+    {
+      "email": "mimaglez90@gmail.com",
+      "contraseña": "Mimaglez90",
+      "id": "2"
+    }
+  ]
+}

@@ -12,14 +12,16 @@
 
 .reg_container{
     width: 100%;
-    
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10rem;
 }
 
 .formulario_reg{
     display: flex;
+    flex-direction: column;
     align-items:center;
     justify-content: center;
     
@@ -29,6 +31,18 @@
 
 .input_reg{
     margin: 2rem auto;
+}
+
+.input_img{
+    justify-content: center;
+    align-items: center;
+}
+
+.img_input{
+    text-align: center;
+    justify-content: center;
+    font-family: var(--font-menu);
+    Color: var(--terciary-color);
 }
 
 

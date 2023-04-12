@@ -29,15 +29,10 @@
         <header class="page-header">
             <div class="container_header">
                 
-                <a href="#home"><img class="img_logo" src="./images/Amare_logo.png" alt="Logo Amare"></a>
-                <nav class="navbar navbar_products">
-                    <a  class="navbar_item navbar_item-products" href="#" >PULSERAS</a>
-                    <a  class="navbar_item navbar_item-products" href="#allProdAnillos">ANILLOS</a>
-                    <a  class="navbar_item navbar_item-products" href="#allProdCollares">COLLARES</a>
-                    <a  class="navbar_item navbar_item-products" href="#allProdAretes">ARETES</a>
-                   <a  class="navbar_item navbar_item-products" href="#allProdBolsas">BOLSAS</a>               
-                    <button class="login_button" type="button"><a href="./login.html#login">Login</a></button>
-                    <button class="login_button" type="button"><a href="./registro_roducto.html">Agregar Producto</a></button>
+                <a href="/index.html"><img class="img_logo" src="./images/Amare_logo.png" alt="Logo Amare"></a>
+                <nav class="navbar navbar_products">              
+                    <button class="login_button" type="button"><a href="./index.html">Logout</a></button>
+                    <button class="login_button" type="button"><a href="./registro_producto.html">Agregar Producto</a></button>
                   </nav>
               <div class="input1-container-max">
               <div class="input1-container">
@@ -55,11 +50,11 @@
           <a id="allProdPulseras"></a>
           
 
-         <section class="product_section pulseras_section">
+         <section class="product_section pulseras_section" data-product>
             
-            <h2 class="section_titulo not-active">PULSERAS</h2>
+            <h2 class="section_titulo not-active">Listado de Productos</h2>
   
-            <div class="product_container" data-producto>
+            <div class="product_container">
   
               <div class="product">
               <a href="#">
@@ -362,21 +357,29 @@
                       
               
           </div>
-
+                 
+                           
+                
+            
+            
          </section>
+
+        
 
        
 
-          <script type=module src="./Js/navbar.js"></script>
-          <script type=module src="./Js/app.js"></script>
+          <script type= "module" src="./Js/navbar.js"></script>
+          <script type= "module" src="./Js/app.js"></script>
+          <script type="module" src="./Controllers/product-list-controller.js"></script>
+          
           <!--uuid-->
           <script
       src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
       integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
-         <!--aLERT-->
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      referrerpolicy="no-referrer" type="module"></script>
+     
+     
 
 
 
